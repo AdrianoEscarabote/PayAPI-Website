@@ -1,6 +1,7 @@
 import { HeaderStyled } from "../styles/HeaderStyle"
 import { ScheduleElement } from "../styles/shared/ScheduleElement";
 import iconCompany from "../assets/shared/desktop/logo.svg";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -8,16 +9,18 @@ export const Header = () => {
       <div className="container">
         <nav>
           <div className="nav-items">
-            <img src={iconCompany} alt="" aria-hidden="true" />
+            <Link to="/">
+              <img src={iconCompany} alt="" aria-hidden="true" />
+            </Link>
             <ul>
               <li>
-                <a href="/">Pricing</a>
+                <Link to="/pricing">Pricing</Link>
               </li>
               <li>
-                <a href="/">About</a>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="/">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

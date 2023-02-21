@@ -50,9 +50,9 @@ html,
 body {
   font-family: 'Public Sans', sans-serif;
   background-color: #EDF3F8;
-  overflow-x: hidden;
   width: 100%;
   display: flex;
+  overflow-x: hidden;
   justify-content: center;
   flex-direction: column;
 }

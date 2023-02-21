@@ -8,25 +8,24 @@ width: 100%;
   display: flex;
   justify-content: center;
   
+  .background-circle {
+    width: 780px;
+    position: absolute !Important;
+    height: 780px;
+    right: -160px;
+    top: -240px;
+    border-radius: 50%;
+    background: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.15;
+  } 
+
   .content {
-    padding: 40px 165px 40px 165px; 
+    padding: 0px 165px 40px 165px; 
     max-width: 1440px;
     width: 100%;
     position: relative;
-    overflow: visible; 
-    
-    .background-circle {
-      overflow: hidden;
-      width: 780px;
-      height: 780px;
-      right: -160px;
-      top: -240px;
-      position: absolute;
-      border-radius: 50%;
-      background: #36536B;
-      mix-blend-mode: normal;
-      opacity: 0.15;
-    }
+
   
     .grid-items {
       display: grid;
@@ -224,25 +223,32 @@ width: 100%;
 }
 
 .container-infos {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px 165px 40px 115px;
   
   .content-info {
+    width: 100%;
     max-width: 1440px;
-    position: relative;
     display: flex; 
     align-items: center;
     flex-direction: column;
     justify-content: center; 
     
     .infos {
-      padding: 40px 165px 40px 115px;
+      width: 100%;
       .easy-implement {
+        position: relative;
+        width: 100%;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 125px;
+
+        img {
+          position: relative;
+          left: -30px;
+        } 
       }
     }
 
@@ -273,11 +279,14 @@ width: 100%;
 
     .simpleUIUX {
       display: flex;
+      width: 100%;
+      justify-content: space-between;
       align-items: center;
-      padding: 40px 165px 40px 165px;
       position: relative;
+      z-index: 1;
 
       .background {
+        z-index: -1;
         width: 780px;
         height: 780px;
         border-radius: 50%;
@@ -286,6 +295,43 @@ width: 100%;
         opacity: 0.15;
         position: absolute;
         right: -320px;
+      }
+    }
+
+    .resources {
+      width: 100%;
+      padding: 50px 0px;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 350px;
+      
+        h5 {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          text-align: center;
+          letter-spacing: -0.138462px;
+          font-family: 'Public Sans';
+          color: #36536B;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          text-align: center;
+          letter-spacing: -0.115385px;
+          color: #36536B;
+          mix-blend-mode: normal;
+          opacity: 0.7;
+        }
       }
     }
   }
