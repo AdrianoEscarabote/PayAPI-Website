@@ -34,9 +34,11 @@ overflow: hidden;
   .logo-links {
     display: flex;
     align-items: center;
+    gap: 64px;
     ul {
       display: flex;
       gap: 40px;
+      padding: 0px;
 
       a {
         text-decoration: none;
@@ -57,6 +59,52 @@ overflow: hidden;
     ul {
       display: flex;
       gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 1048px) {
+  padding: 40px 65px 40px 65px !Important;
+}
+
+// tablet
+@media (max-width: 768px) {
+  padding: 40px 30px !Important;
+
+  .logo-links {
+    gap: 24px !Important;
+
+    ul {
+      gap: 30px !Important;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: 580px) {
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+    max-width: 135px;
+
+    .background {
+      top: 137px;
+      left: -310px;
+    }
+
+    .logo-links {
+      flex-direction: column;
+
+      ul {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .social-icons {
+      ul {
+        padding: 0px;
+      }
     }
   }
 }
