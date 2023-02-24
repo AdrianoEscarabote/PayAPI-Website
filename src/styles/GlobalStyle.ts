@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+* {
+  box-sizing: border-box;
+}
 /* Remove default margin */
 body,
 h1,

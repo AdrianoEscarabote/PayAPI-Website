@@ -7,6 +7,7 @@ width: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0px 165px 40px 165px; 
   
   .background-circle {
     width: 780px;
@@ -21,11 +22,9 @@ width: 100%;
   } 
 
   .content {
-    padding: 0px 165px 40px 165px; 
     max-width: 1440px;
     width: 100%;
     position: relative;
-
   
     .grid-items {
       display: grid;
@@ -138,14 +137,20 @@ width: 100%;
   justify-content: center; 
   background: #1B262F;
   overflow: hidden;
+  padding: 100px 165px 100px 165px;
   
   .work-with {
     position: relative;
-    padding: 100px 165px 100px 165px;
     max-width: 1440px;
-    display: grid;
-    grid-template-columns: 50% 50%; 
-    gap: 120px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* gap: 120px;  */
+
+    .container-background {
+      position: absolute;
+    }
 
     .background {
       z-index: 1;
@@ -165,6 +170,7 @@ width: 100%;
       display: flex; 
       flex-direction: column;
       gap: 24px;
+      max-width: 445px;
 
       h2 {
         font-family: 'DM Serif Display', serif;
@@ -207,9 +213,18 @@ width: 100%;
 
     .work-col2 {
       display: flex;
-      flex-wrap: wrap;
+      width: 100%
+      align-items: center;
+      justify-content: center;
+      max-width: 536px;
+    }
+
+    .images {
+      display: flex;
       align-items: center; 
-      gap: 50px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 50px; 
       max-width: 536px;
       height: auto;
 
@@ -294,7 +309,12 @@ width: 100%;
         mix-blend-mode: normal;
         opacity: 0.15;
         position: absolute;
-        right: -320px;
+        right: -550px;
+      }
+
+      img {
+        position: relative;
+        right: -115px
       }
     }
 
@@ -333,6 +353,293 @@ width: 100%;
           opacity: 0.7;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1148px) {
+  .container-infos {
+    padding: 40px 30px 40px 30px;
+  }
+  .container {
+    padding: 0px 30px 40px 30px;
+    .content {
+      .background-circle {
+        right: -280px;
+      }
+
+      img {
+        position: relative;
+        right: -120px;
+      }
+    }
+  }
+  .resources {
+    gap: 30px;
+  }
+  .work-with {
+    padding: 100px 55px 100px 55px !important;
+  }
+  .simpleUIUX {
+    img {
+      right: -75px !Important;
+    }
+  }  
+}
+
+
+// tablet
+@media (max-width: 924px) {
+  .container {
+    .content {
+      max-width: 784px !Important;
+
+      .container-background {
+        display: flex;
+        align-items: center;
+        top: -400px;
+        left: -40px;
+        width: 111%;
+        height: 100%;
+        position: absolute;
+      }
+      
+      .background-circle {
+        width: 100%;
+        height: 800px;
+        position: relative !important;
+        right: unset !Important;
+        left: unset !Important;
+      }
+
+      .grid-items {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+
+        .col-1 {
+          align-items: center !Important;
+          text-align: center !Important;
+        }
+
+        .col-2 {
+          img {
+            z-index: 2;
+          }
+        }
+
+        h1 {
+          font-size: 48px !Important;
+          line-height: 56px !Important;
+        }
+        img {
+          width: 259px;
+          height: auto;
+          position: initial !Important;
+        }
+      }
+    }
+  }
+
+  .work-with {
+    display: flex !Important;
+    flex-direction: column-reverse;
+    max-width: 100% !Important;
+    z-index: 20;
+
+    .container-background {
+      position: absolute;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .background {
+        position: relative !Important; 
+        width: 100%; 
+        height: 80%;
+        top: -329px !Important;
+        right: 55px !Important;
+        left: unset !Important;
+      }
+    }
+
+    .work-col1 {
+      text-align: center;
+
+      a {
+        margin: 0 auto;
+      }
+    }
+
+    .work-col2 {
+      align-items: center !Important;
+      margin: 0 auto;
+
+    }
+  }
+
+  .easy-implement {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    left: 30px !Important;
+  }
+
+  .text {
+    text-align: center;   
+    align-items: center;
+  }
+
+  .simpleUIUX {
+    flex-direction: column-reverse;
+    align-items: center !Important;
+
+    .phoneSimpleUi {
+      img {
+        position: initial !Important;
+        padding-left: 40px;
+
+      }
+    }
+
+    .background {
+      display: none;
+    }
+  }
+}
+
+// mobile
+@media (max-width: 580px) {
+  .container {
+    padding: 0px 25px 40px 25px;
+    .content {
+      max-width: 784px !Important;
+
+      .container-background {
+        left: -200px !Important;
+        right: unset !Important;
+        top: -400px;
+        width: 200%;
+        height: 1000px !Imortant;
+
+        .background-circle {
+          width: 100%;
+          height: 920px;
+          right: -40px !Important;
+          left: unset !Important;
+        }
+      }
+
+      .grid-items {
+        .col-2 {
+          img {
+            position: relative !Important;
+            top: -20px;
+            left: 8px !Important;
+            width: 188px !Important;
+            height: auto !Important;
+          }
+        }
+        h1 {
+          font-weight: 400 !Important;
+          font-size: 32px !Important;
+          line-height: 36px !Important;
+        }
+        .col-1 {
+          position: relative;
+          top: -20px;
+          form {
+            flex-direction: column !Important; 
+            align-items: center !Important;
+            width: 100%; 
+            max-width: 327px !Important;
+            background: transparent;
+            box-shadow: unset;
+            gap: 16px;
+            height: auto;
+      
+            label {
+              border-radius: 24px;
+              box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+              background: #fff; 
+              width: 100% !Important;
+      
+              input {
+                width: 91.5%;
+                outline: transparent;
+                height: 48px;
+                border-radius: 24px;
+                padding-left: 27px;
+                margin-left: unset !Important;
+              }
+            }
+      
+            button {
+              width: 100%;
+              max-width: 327px;
+              height: 48px !Important;
+              position: initial !Important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container-work {
+    padding: 0px;
+  } 
+
+  .work-with {
+    padding: 80px 25px 80px 25px !important;
+
+    .container-background {
+      right: -55px;
+
+      .background {
+        position: relative !Important; 
+        width: 100%; 
+        height: 400px;
+      }
+    }
+
+    .work-col2 {
+      img {
+        margin: 0 auto;
+      }
+    }
+    
+    .work-col1 {
+      h2 {
+        font-size: 32px !important;
+        line-height: 36px !important;
+      }
+    }
+  }
+
+  .phoneSimpleUi {
+    img {
+      padding-left: 10px !Important;
+    }
+  }
+
+  .container-infos {
+    padding: 40px 25px 40px 25px;
+
+    h3 {
+      font-size: 36px !Important;
+      line-height: 36px !Important;
+    }
+
+    .resources {
+      display: flex !Important;
+      flex-direction: column;
+      align-items: center;
+      
     }
   }
 }`

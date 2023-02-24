@@ -17,7 +17,7 @@ export const Header = () => {
   return (
     <HeaderStyled>
       <div className="container">
-        <nav>
+        <nav className={openMenu === "closed" ? "nav-mobile-layout" : ""}>
           <Link to="/">
             <img src={iconCompany} alt="" aria-hidden="true" />
           </Link>

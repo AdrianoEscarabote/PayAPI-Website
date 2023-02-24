@@ -18,7 +18,9 @@ export const Main = () => {
     <MainStyled>
       <div className="container">
         <div className="content">
-          <div className="background-circle"></div>
+          <div className="container-background">
+            <div className="background-circle"></div>
+          </div>
           <section className="grid-items">
             <div className="col-1">
               <h1>
@@ -40,19 +42,23 @@ export const Main = () => {
       </div>
       <div className="container-work">
         <section className="work-with">
-          <div className="background"></div>
+          <div className="container-background">
+            <div className="background"></div>
+          </div>
           <div className="work-col1">
             <h2>Who we work with</h2>
             <p>Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users.</p>
             <a href="/">About Us</a>
           </div>
           <div className="work-col2">
-            <img src={logoTesla} alt="" aria-hidden="true" />
-            <img src={logoMicrosoft} alt="" aria-hidden="true" />
-            <img src={logoHp} alt="" aria-hidden="true"/>
-            <img src={logoOracle} alt="" aria-hidden="true" />
-            <img src={logoGoogle} alt="" aria-hidden="true" />
-            <img src={logoNvidia} alt="" aria-hidden="true" />
+            <div className="images">
+              <img src={logoTesla} alt="" aria-hidden="true" />
+              <img src={logoMicrosoft} alt="" aria-hidden="true" />
+              <img src={logoHp} alt="" aria-hidden="true"/>
+              <img src={logoOracle} alt="" aria-hidden="true" />
+              <img src={logoGoogle} alt="" aria-hidden="true" />
+              <img src={logoNvidia} alt="" aria-hidden="true" />
+            </div>
           </div>
         </section>
       </div>

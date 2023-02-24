@@ -63,7 +63,7 @@ overflow: hidden;
   }
 }
 
-@media (max-width: 1048px) {
+@media (max-width: 1148px) {
   padding: 40px 65px 40px 65px !Important;
 }
 
@@ -83,6 +83,8 @@ overflow: hidden;
 // mobile
 
 @media (max-width: 580px) {
+  padding: 40px 25px !Important;
+
   .container-footer {
     flex-direction: column;
     align-items: center;
