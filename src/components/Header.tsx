@@ -27,6 +27,9 @@ export const Header = () => {
             <img src={openMenuImg} alt="" aria-hidden="true" />
           </button>
           <div className={openMenu === "closed" ? "nav-items" : "nav-items mobile-layout"}>
+            <div className="container-mobile-background">
+              <div className="background-mobile"></div>
+            </div>
             <button onClick={HandleClickMobileButton} 
               aria-label={openMenu === "closed" ? "" : "close mobile menu"} 
               aria-hidden={openMenu === "closed" ? "true" : "false"}

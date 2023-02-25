@@ -12,31 +12,31 @@ export const Footer = () => {
       <div className="container-footer">
         <div className="background"></div>
         <div className="logo-links">
-          <Link to="/">
+          <Link to="/" aria-label="go back to the main page">
             <img src={logoFooter} alt="" aria-hidden="true" /> 
           </Link>
           <ul>
-            <li><Link to="/pricing">Pricing</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/pricing" aria-label="go to pricing page">Pricing</Link></li>
+            <li><Link to="/about" aria-label="go to about page">About</Link></li>
+            <li><Link to="/contact" aria-label="go to contact page">Contact</Link></li>
           </ul>
         </div>
         <div className="social-icons">
           <ul>
             <li>
-              <a>
+              <Link to="/" aria-label="go to facebook">
                 <img src={iconFacebook} alt="" aria-hidden="true" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to="/" aria-label="go to twitter">
                 <img src={iconTwitter} alt="" aria-hidden="true" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to="/" aria-label="go to linkedin">
                 <img src={iconLinkedin} alt="" aria-hidden="true" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

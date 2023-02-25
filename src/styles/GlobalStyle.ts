@@ -94,4 +94,12 @@ select {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
-}`
+}
+
+button,
+a {
+  &:focus {
+    outline: 2.6px dotted black;
+  }
+}
+`

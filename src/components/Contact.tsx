@@ -5,7 +5,6 @@ import logoHp from "../assets/shared/desktop/hewlett-packard.svg";
 import logoOracle from "../assets/shared/desktop/oracle.svg";
 import logoGoogle from "../assets/shared/desktop/google.svg";
 import logoNvidia from "../assets/shared/desktop/nvidia.svg";
-import imgImplement from "../assets/home/desktop/illustration-easy-to-implement.svg";
 import { ReadyToStart } from "./shared/ReadyToStart";
 
 export const Contact = () => {
@@ -18,17 +17,17 @@ export const Contact = () => {
           <div className="col1">
             <form noValidate>
               <fieldset>
-              <legend className="sr-only">COLOCAR ALGO</legend>
+              <legend className="sr-only">Add your information in the form below!</legend>
 
-              <label htmlFor="name">
+              <label htmlFor="name" aria-label="type your name">
                 <input type="text" name="name" id="name" placeholder="Name"/>
               </label>
 
-              <label htmlFor="email">
+              <label htmlFor="email" aria-label="type your email">
                 <input type="email" name="email" id="email" placeholder="Email Address" />
               </label>
 
-              <label htmlFor="company">
+              <label htmlFor="company" aria-label="provide the name of your company">
                 <input type="text" name="company" id="company" placeholder="Company Name" />
               </label>
 
@@ -36,17 +35,17 @@ export const Contact = () => {
                 <input type="text" name="title" id="title" placeholder="Title" />
               </label>
 
-              <label htmlFor="message" id="message">
+              <label aria-label="here you can write a message if you want." htmlFor="message" id="message">
                 <textarea placeholder="Message" id="message"></textarea>
               </label>
               
-              <label htmlFor="up-to-date">
+              <label htmlFor="up-to-date" aria-label="leave the input checked if you want to stay updated on company announcements and updates to our API">
                 <input type="checkbox" name="up-to-date" id="up-to-date" />
                 <span>Stay up-to-date with company announcements and updates to our API</span>
               </label>
               </fieldset>
 
-              <button type="submit">Submit</button>
+              <button type="submit" aria-label="click to confirm the form">Submit</button>
             </form>
           </div>
           <div className="col2">

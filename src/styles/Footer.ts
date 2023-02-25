@@ -26,6 +26,12 @@ overflow: hidden;
     right: -500px;
     top: -100px;
   }
+  a {
+    &:focus {
+      opacity: 1;
+      outline: 2.6px dotted #fff;
+    }
+  } 
 
   ul {
     list-style: none;

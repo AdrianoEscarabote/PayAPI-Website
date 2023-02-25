@@ -14,7 +14,6 @@ font-size: 15px;
 line-height: 18px;
 letter-spacing: -0.115385px;
 color: #FBFCFE;
-
 &:hover {
   transition: 0.4s ease-in-out;
   background: #DA6D97;

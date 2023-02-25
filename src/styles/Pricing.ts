@@ -127,9 +127,9 @@ padding: 40px 165px 40px 165px;
       letter-spacing: -0.115385px;
       color: #36536B;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: #FBFCFE;
-        transition: 0.4s ease-in-out;
         background: #36536B;
       }
     }

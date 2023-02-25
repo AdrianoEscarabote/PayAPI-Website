@@ -1,6 +1,8 @@
 import { AboutStyled } from "../styles/AboutStyled";
 import imageTeam from "../assets/about/desktop/image-team-members.jpg";
 import { ReadyToStart } from "./shared/ReadyToStart";
+import imageTeamTablet from "../assets/about/tablet/image-team-members.jpg";
+import imageTeamMobile from "../assets/about/mobile/image-team-members.jpg";
 
 export const About = () => {
   return (
@@ -25,13 +27,16 @@ export const About = () => {
             </section>
           </div>
         </div>
-
       </div>
       <div className="image">
         <div className="container-background">
           <div className="background"></div>
         </div>
-        <img src={imageTeam} alt="" />
+        <picture>
+          <source media="(min-width:768px)" srcSet={imageTeam} aria-hidden="true" />
+          <source media="(max-width:580px)" srcSet={imageTeamMobile} aria-hidden="true"  />
+          <img src={imageTeamTablet} alt="" aria-hidden="true" />
+        </picture>
       </div>
       <div className="container">
         <div className="content">
