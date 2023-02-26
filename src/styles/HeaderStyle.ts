@@ -14,8 +14,13 @@ padding: 40px 165px 40px 165px;
   nav {
     display: flex;
     align-items: center;
-    gap: 64px;
+    gap: 66px;
     width: 100%;
+    a {
+      img {
+        width: 165px;
+      }
+    }
     .mobile-button {
       display: none;
     }

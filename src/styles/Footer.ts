@@ -4,7 +4,7 @@ export const FooterStyled = styled.footer`
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 30px 165px 30px 165px;
+padding: 30px 165px 14px 165px;
 background: #1B262F;
 overflow: hidden;
 
@@ -14,6 +14,7 @@ overflow: hidden;
   justify-content: space-between;
   width: 100%;
   position: relative;
+  bottom: 7px;
 
   .background {
     width: 780px;

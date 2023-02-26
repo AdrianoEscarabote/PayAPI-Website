@@ -13,8 +13,8 @@ width: 100%;
     width: 780px;
     position: absolute !Important;
     height: 780px;
-    right: -160px;
-    top: -240px;
+    right: -304px;
+    top: -302px;
     border-radius: 50%;
     background: #36536B;
     mix-blend-mode: normal;
@@ -35,6 +35,8 @@ width: 100%;
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 90px;
+        gap: 20px;
   
         h1 {
           max-width: 546px;
@@ -44,10 +46,11 @@ width: 100%;
           line-height: 72px;
           letter-spacing: -0.553846px;
           color: #36536B;
+          padding-bottom: -10px;
         }
   
         form {
-          margin-top: 59px;
+          margin-top: 31px;
           display: flex;
           background-color: blue;
           width: 445px;
@@ -108,7 +111,8 @@ width: 100%;
           }
         }
         p {
-          margin-top: 16px;
+          padding-bottom: 10px;
+          padding-left: 25px;
           font-weight: 400;
           font-size: 15px;
           line-height: 18px;
@@ -131,14 +135,19 @@ width: 100%;
         justify-content: center;
         img {
           z-index: 300;
+          position: relative;
+          top: -24px;
+          right: -76px;
         }
       }
     }
   }
 }
 .container-work {
+  position: relative;
+  top: -94px;
   width: 100%;
-  height: auto;
+  height: 472px;
   display: flex;
   align-items: center;
   justify-content: center; 
@@ -171,7 +180,7 @@ width: 100%;
       z-index: 2;
       display: flex; 
       flex-direction: column;
-      gap: 24px;
+      gap: 27px;
       max-width: 445px;
       h2 {
         font-family: 'DM Serif Display', serif;
@@ -246,7 +255,7 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 165px 40px 115px;
+  padding: 40px 165px 48px 115px;
   
   .content-info {
     width: 100%;
@@ -265,9 +274,17 @@ width: 100%;
         justify-content: space-between;
         align-items: center;
 
+        .text {
+          position: relative;
+          top: -65px;
+          left: -95px;
+
+        }
+
         img {
           position: relative;
-          left: -30px;
+          left: -5px;
+          top: -39px;
         } 
       }
     }
@@ -305,6 +322,12 @@ width: 100%;
       position: relative;
       z-index: 1;
 
+      .text {
+        position: relative;
+        left: 50px;
+        top: -70px;
+      }
+
       .background {
         z-index: -1;
         width: 780px;
@@ -315,19 +338,22 @@ width: 100%;
         opacity: 0.15;
         position: absolute;
         right: -550px;
+        top: -135px;
       }
 
       img {
         position: relative;
-        right: -115px
+        top: -46px;
+        right: -95px
       }
     }
 
     .resources {
       width: 100%;
-      padding: 50px 0px;
+      padding-bottom: 50px;
       display: flex;
       justify-content: space-between;
+      padding-left: 45px;
 
       div {
         text-align: center;
@@ -357,6 +383,14 @@ width: 100%;
           mix-blend-mode: normal;
           opacity: 0.7;
         }
+      }
+    }
+    .section-form {
+      position: relative;
+      bottom: 8px;
+      
+      h4 {
+        padding-left: 50px;
       }
     }
   }
