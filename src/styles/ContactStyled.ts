@@ -43,6 +43,38 @@ padding: 40px 165px 40px 165px;
 
     .col1 {
       form {
+        .error {
+          font-family: 'Public Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 13px;
+          letter-spacing: -0.0846154px;
+          color: #FF0000;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+        }
+
+        input[type="text"].error_input,
+        input[type="email"].error_input,
+        textarea.error_input {
+          border-bottom: 1px solid #FF0000 !important;
+          color: #FF0000 !important;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+
+          &::placeholder {
+            color: #FF0000 !important;
+          }
+          
+          &:-ms-input-placeholder {
+            color: #FF0000 !important;
+          }
+          
+          &::-ms-input-placeholder {
+            color: #FF0000 !important;
+          }
+        }
 
         fieldset {
           border: unset;
@@ -73,10 +105,16 @@ padding: 40px 165px 40px 165px;
             letter-spacing: -0.115385px;
             color: #36536B;
 
-            &::-webkit-input-placeholder,
-            &:-moz-placeholder,
-            &:-moz-placeholder { 
-              color: #36536b48;
+            &::placeholder {
+              color: #92A3B1;
+            }
+            
+            &:-ms-input-placeholder {
+              color: #92A3B1;
+            }
+            
+            &::-ms-input-placeholder {
+              color: #92A3B1;
             }
           }
 
@@ -84,6 +122,11 @@ padding: 40px 165px 40px 165px;
             height: 89px;
             resize: none;
           }
+        }
+
+        .disabled {
+          pointer-events: none;
+          opacity: 0.5;
         }
 
         button {

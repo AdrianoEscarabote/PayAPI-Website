@@ -4,27 +4,25 @@ import iconFacebook from "../assets/shared/desktop/facebook.svg"
 import iconTwitter from "../assets/shared/desktop/twitter.svg"
 import iconLinkedin from "../assets/shared/desktop/linkedin.svg"
 import { Link } from "react-router-dom";
-import { useEffect } from "react"
-import { UseName } from "../context";
 
 interface FooterProps {
   setName: React.Dispatch<React.SetStateAction<string | null>>
-}
+};
 
 export const Footer: React.FC<FooterProps> = ({ setName }) => {
   
   const handleClickLink = (name: string | null) => {
     if (name === "main") {
-      setName("main")
+      setName("main");
     } else {
-      name === "Pricing" ? setName("pricing") : setName("About")
-    }
-  }
+      name === "Pricing" ? setName("pricing") : setName("About");
+    };
+  };
 
   return (
     <FooterStyled>
       <div className="container-footer">
-        <div className={"background="}></div>
+        <div className={"background"}></div>
         <div className="logo-links">
           <Link onClick={() => handleClickLink("main") } to="/" aria-label="go back to the main page">
             <img src={logoFooter} alt="" aria-hidden="true" /> 
@@ -58,5 +56,5 @@ export const Footer: React.FC<FooterProps> = ({ setName }) => {
         </div>
       </div>
     </FooterStyled>
-  )
-}
+  );
+};

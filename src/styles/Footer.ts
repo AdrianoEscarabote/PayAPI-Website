@@ -29,6 +29,7 @@ overflow: hidden;
     top: -100px;
     z-index: -1;
   }
+
   a {
     &:focus {
       opacity: 1;
@@ -102,7 +103,6 @@ overflow: hidden;
 }
 
 // mobile
-
 @media (max-width: 580px) {
   padding: 40px 25px !Important;
 
