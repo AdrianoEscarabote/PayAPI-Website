@@ -7,8 +7,8 @@ export const ReadyToStart = () => {
       <div className="container-form">
         <h4>Ready to start?</h4>
         <form noValidate>
-          <label htmlFor="email">
-            <input type="email" name="email" id="email" placeholder="Enter email address" />
+          <label htmlFor="email-ready">
+            <input type="email" name="email-ready" id="email-ready" placeholder="Enter email address" />
           </label>
           <button type="submit">Schedule a Demo</button>
         </form>

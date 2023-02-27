@@ -18,7 +18,7 @@ export const Header = () => {
     <HeaderStyled>
       <div className="container">
         <nav className={openMenu === "closed" ? "nav-mobile-layout" : ""}>
-          <Link to="/">
+          <Link to="/" aria-label="main page">
             <img src={iconCompany} alt="" aria-hidden="true" />
           </Link>
           <button className="mobile-button"
@@ -38,16 +38,16 @@ export const Header = () => {
             </button>
             <ul>
               <li>
-                <Link to="/pricing">Pricing</Link>
+                <Link to="/pricing" aria-label="go to Pricing page">Pricing</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" aria-label="go to about page">About</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" aria-label="go to contact page">Contact</Link>
               </li>
             </ul>
-            <ScheduleElement href="/">Schedule a Demo</ScheduleElement>
+            <ScheduleElement href="/" aria-label="schedule a Demo">Schedule a Demo</ScheduleElement>
           </div>
         </nav>
       </div>

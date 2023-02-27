@@ -173,8 +173,8 @@ width: 100%;
       opacity: 0.15;
       background: #36536B;
       position: absolute;
-      left: -250px;
-      top: -380px;
+      left: -400px;
+      top: -594px;
     }
     .work-col1 {
       z-index: 2;
@@ -362,6 +362,7 @@ width: 100%;
         flex-direction: column;
         justify-content: center;
         max-width: 350px;
+        gap: 35px;
       
         h5 {
           font-weight: 700;

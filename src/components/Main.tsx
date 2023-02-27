@@ -86,17 +86,17 @@ export const Main = () => {
           <section className="resources">
             <div className="personal">
               <img src={iconPersonal} alt="" aria-hidden="true" />
-              <h5>Personal Finances</h5>
+              <h4>Personal Finances</h4>
               <p>Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account.</p>
             </div>
             <div className="banking">
               <img src={iconBanking} alt="" />
-              <h5>Banking & Coverage</h5>
+              <h4>Banking & Coverage</h4>
               <p>With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts.</p>
             </div>
             <div className="payments">
               <img src={iconConsumer} alt="" />
-              <h5>Consumer Payments</h5>
+              <h4>Consumer Payments</h4>
               <p>It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account.</p>
             </div>
           </section>

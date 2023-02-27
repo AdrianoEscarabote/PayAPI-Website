@@ -42,6 +42,11 @@ overflow: hidden;
     display: flex;
     align-items: center;
     gap: 64px;
+
+    img {
+      filter: brightness(1000%);
+    }
+
     ul {
       display: flex;
       gap: 40px;
