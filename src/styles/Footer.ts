@@ -15,6 +15,7 @@ overflow: hidden;
   width: 100%;
   position: relative;
   bottom: 7px;
+  z-index: 1;
 
   .background {
     width: 780px;
@@ -26,6 +27,7 @@ overflow: hidden;
     position: absolute;
     right: -500px;
     top: -100px;
+    z-index: -1;
   }
   a {
     &:focus {
@@ -71,6 +73,13 @@ overflow: hidden;
     ul {
       display: flex;
       gap: 20px;
+
+      a {
+        cursor: pointer;
+        &:hover {
+          filter: invert(75%) sepia(28%) saturate(4434%) hue-rotate(295deg) brightness(89%) contrast(92%);
+        }
+      }
     }
   }
 }

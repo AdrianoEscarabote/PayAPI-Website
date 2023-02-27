@@ -121,14 +121,15 @@ padding: 40px 165px 40px 165px;
     visibility: visible;
     overflow: hidden;
     .container-mobile-background {
+      position: absolute;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: absolute;
-      width: 280%;
-      top: -558px;
-      right: -51%;
       z-index: -1;
+      width: 280%;
+      top: -654px;
+      right: -410px;
+
       .background-mobile {
         width: 100%;
         height: 780px;
@@ -137,6 +138,12 @@ padding: 40px 165px 40px 165px;
         mix-blend-mode: normal;
         opacity: 0.15;
       }
+    }
+    .container-mobile-background.main {
+      width: 280%;
+      top: -558px !Important;
+      right: -51% !Important;
+      left: unset !Important;
     }
     button {
       position: absolute;

@@ -102,4 +102,18 @@ a {
     outline: 2.6px dotted black;
   }
 }
-`
+
+body {
+  &::-webkit-scrollbar {
+    width: 12px;              
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: #D2DBE3;        
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: #1F2C38;    
+    border-radius: 20px;    
+  }
+}`

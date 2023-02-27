@@ -144,6 +144,11 @@ padding: 40px 165px 40px 165px;
 @media (max-width: 768px) {
   padding: 40px 30px 40px 30px;
 
+  .background {
+    top: -800px !Important;
+    right: -520px !Important;
+  }
+
   h1 {
     margin: 0 auto;
     text-align: center;
@@ -183,8 +188,7 @@ padding: 40px 165px 40px 165px;
   }
 }
 
-// mobile
-@media (max-width: 580px) {
-
+.background-mobile {
+  display: none;
 }
 `

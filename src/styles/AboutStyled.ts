@@ -21,9 +21,9 @@ align-items: center;
       height: 780px;
       border-radius: 50%;
       position: absolute;
-      top: -760px;
-      right: -300px;
-    }
+      top: -772px;
+      right: -437px;
+    } 
     .text {
       padding-left: 95px;
       display: flex;

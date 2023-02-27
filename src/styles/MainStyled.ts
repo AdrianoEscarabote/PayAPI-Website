@@ -227,7 +227,7 @@ width: 100%;
 
     .work-col2 {
       display: flex;
-      width: 100%
+      width: 100%;
       align-items: center;
       justify-content: center;
       max-width: 536px;
@@ -364,7 +364,7 @@ width: 100%;
         max-width: 350px;
         gap: 35px;
       
-        h5 {
+        h4 {
           font-weight: 700;
           font-size: 18px;
           line-height: 25px;
@@ -487,6 +487,14 @@ width: 100%;
       }
     }
   }
+  .container-work {
+    height: auto !Important; 
+  }
+  .resources,
+  h4 {
+    padding: 0px !Important;
+  }
+
   .work-with {
     display: flex !Important;
     flex-direction: column-reverse;
@@ -501,7 +509,6 @@ width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
-
       .background {
         position: relative !Important; 
         width: 100%; 
@@ -523,13 +530,15 @@ width: 100%;
     .work-col2 {
       align-items: center !Important;
       margin: 0 auto;
-
     }
   }
 
   .easy-implement {
     display: flex;
     flex-direction: column;
+    .text {
+      left: unset !Important;
+    }
   }
   img {
     left: 30px !Important;
@@ -543,12 +552,15 @@ width: 100%;
   .simpleUIUX {
     flex-direction: column-reverse;
     align-items: center !Important;
+    .text {
+      position: initial !Important;
+      padding-bottom: 60px;
+    }
 
     .phoneSimpleUi {
       img {
         position: initial !Important;
         padding-left: 40px;
-
       }
     }
 
@@ -669,7 +681,7 @@ width: 100%;
 
   .phoneSimpleUi {
     img {
-      padding-left: 10px !Important;
+      padding-left: 20px !Important;
     }
   }
 

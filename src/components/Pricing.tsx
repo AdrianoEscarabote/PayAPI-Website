@@ -1,7 +1,6 @@
 import { PricingStyled } from "../styles/Pricing"
 import iconCheck from "../assets/shared/desktop/icon-check.svg";
 import { useEffect } from "react";
-import { ObjectFlags } from "typescript";
 import { ReadyToStart } from "./shared/ReadyToStart";
 
 interface Data {
@@ -17,7 +16,7 @@ interface Data {
     {Liabilities: boolean},
     {Income: boolean},
   ]
-}
+};
 
 const dataPricing: Data[] = [
   {
@@ -62,17 +61,9 @@ const dataPricing: Data[] = [
       {Income: true},
     ]
   },
-]
+];
 
 export const Pricing = () => {
-
-  useEffect(() => {
-    dataPricing.forEach(element => {
-      element.itemList.forEach(element => {
-        console.log(Object.keys(element))
-      })
-    })
-  }, [])
 
   return (
     <PricingStyled>
@@ -121,5 +112,5 @@ export const Pricing = () => {
         <ReadyToStart />
       </div>
     </PricingStyled>
-  )
-}
+  );
+};

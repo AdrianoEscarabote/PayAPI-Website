@@ -22,8 +22,8 @@ padding: 40px 165px 40px 165px;
     height: 780px;
     border-radius: 50%;
     position: absolute;
-    top: -760px;
-    right: -150px;
+    top: -790px;
+    right: -527px;
   }
 
   h1 {
