@@ -57,6 +57,13 @@ padding: 2.5rem 10.3125rem 2.5rem 10.3125rem;
     }
   }
 }
+.hidden {
+  display: none;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  opacity: 0;
+}
 @media (max-width: 71.75rem) {
   padding: 2.5rem 4.0625rem 2.5rem 4.0625rem !Important;
 }
@@ -100,13 +107,6 @@ padding: 2.5rem 10.3125rem 2.5rem 10.3125rem;
   .mobile-button {
     display: block !Important;
     z-index: 1000;
-  }
-  .hidden {
-    display: none;
-    position: absolute;
-    top: 0rem;
-    right: 0rem;
-    opacity: 0;
   }
   .close-mobile-menu {
     display: block !Important;
