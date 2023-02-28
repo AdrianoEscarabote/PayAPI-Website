@@ -98,18 +98,18 @@ select {
 button,
 a {
   &:focus {
-    outline: 2.6px dotted black;
+    outline: 0.1625rem dotted black;
   }
 }
 body {
   &::-webkit-scrollbar {
-    width: 12px;              
+    width: 0.75rem;              
   }
   &::-webkit-scrollbar-track {
     background: #D2DBE3;        
   }
   &::-webkit-scrollbar-thumb {
     background: #1F2C38;    
-    border-radius: 20px;    
+    border-radius: 1.25rem;    
   }
 }`

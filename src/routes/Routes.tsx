@@ -5,7 +5,6 @@ import { Main } from "../components/Main";
 import { Pricing } from "../components/Pricing";
 
 export const ReactRoutes = () => {
-  
   return (
     <Routes>
       <Route path="/" element={<Main />} />
@@ -13,5 +12,5 @@ export const ReactRoutes = () => {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
-  )
-}
+  );
+};

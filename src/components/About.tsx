@@ -73,5 +73,5 @@ export const About = () => {
         <ReadyToStart />
       </div>
     </AboutStyled>
-  )
-}
+  );
+};

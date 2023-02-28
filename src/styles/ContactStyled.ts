@@ -5,11 +5,11 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 40px 165px 40px 165px;
+padding: 2.5rem 10.3125rem 2.5rem 10.3125rem;
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 90rem;
   z-index: 1;
   position: relative;
 
@@ -18,28 +18,28 @@ padding: 40px 165px 40px 165px;
     background: #36536B;
     mix-blend-mode: normal;
     opacity: 0.15;
-    width: 780px;
-    height: 780px;
+    width: 48.75rem;
+    height: 48.75rem;
     border-radius: 50%;
     position: absolute;
-    top: -790px;
-    right: -527px;
+    top: -49.375rem;
+    right: -32.9375rem;
   }
 
   h1 {
-    max-width: 680px;
+    max-width: 42.5rem;
     font-family: 'DM Serif Display';
     font-weight: 400;
-    font-size: 56px;
-    line-height: 56px;
-    letter-spacing: -0.430769px;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.0269rem;
     color: #36536B;
   }
 
   .grid-items {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin-top: 72px;
+    margin-top: 4.5rem;
 
     .col1 {
       form {
@@ -47,9 +47,9 @@ padding: 40px 165px 40px 165px;
           font-family: 'Public Sans';
           font-style: normal;
           font-weight: 400;
-          font-size: 11px;
-          line-height: 13px;
-          letter-spacing: -0.0846154px;
+          font-size: 0.6875rem;
+          line-height: 0.8125rem;
+          letter-spacing: -0.0053rem;
           color: #FF0000;
           mix-blend-mode: normal;
           opacity: 0.5;
@@ -58,7 +58,7 @@ padding: 40px 165px 40px 165px;
         input[type="text"].error_input,
         input[type="email"].error_input,
         textarea.error_input {
-          border-bottom: 1px solid #FF0000 !important;
+          border-bottom: 0.0625rem solid #FF0000 !important;
           color: #FF0000 !important;
           mix-blend-mode: normal;
           opacity: 0.5;
@@ -80,12 +80,12 @@ padding: 40px 165px 40px 165px;
           border: unset;
           display: flex;
           flex-direction: column;
-          gap: 24px;
+          gap: 1.5rem;
 
           input,
           textarea {
             &:focus {
-              outline: 2.6px dotted #000 !Important;
+              outline: 0.1625rem dotted #000 !Important;
             }
           }
 
@@ -93,16 +93,16 @@ padding: 40px 165px 40px 165px;
           input[type="email"],
           textarea {
             border: unset;
-            border-bottom: 1px solid #36536b1e;
+            border-bottom: 0.0625rem solid #36536b1e;
             background: transparent;
-            height: 42px;
+            height: 2.625rem;
             width: 100%;
-            max-width: 445px;
+            max-width: 27.8125rem;
             font-family: 'Public Sans';
             font-weight: 400;
-            font-size: 15px;
-            line-height: 25px;
-            letter-spacing: -0.115385px;
+            font-size: 0.9375rem;
+            line-height: 1.5625rem;
+            letter-spacing: -0.0072rem;
             color: #36536B;
 
             &::placeholder {
@@ -117,9 +117,9 @@ padding: 40px 165px 40px 165px;
               color: #92A3B1;
             }
           }
-
+         
           textarea {
-            height: 89px;
+            height: 5.5625rem;
             resize: none;
           }
         }
@@ -130,17 +130,17 @@ padding: 40px 165px 40px 165px;
         }
 
         button {
-          margin-top: 24px;
-          width: 152px; 
-          height: 48px;
-          border: 1px solid #36536B;
-          border-radius: 24px;
+          margin-top: 1.5rem;
+          width: 9.5rem; 
+          height: 3rem;
+          border: 0.0625rem solid #36536B;
+          border-radius: 1.5rem;
           font-family: 'Public Sans';
           font-weight: 700;
-          font-size: 15px;
-          line-height: 18px;
+          font-size: 0.9375rem;
+          line-height: 1.125rem;
           text-align: center;
-          letter-spacing: -0.115385px;
+          letter-spacing: -0.0072rem;
           color: #36536B;
 
           &:hover {
@@ -158,14 +158,14 @@ padding: 40px 165px 40px 165px;
       flex-direction: column;
       justify-content: center;
       height: auto;
-      gap: 37px;
+      gap: 2.3125rem;
       h2 {
-        max-width: 445px;
+        max-width: 27.8125rem;
         font-family: 'DM Serif Display';
         font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
-        letter-spacing: -0.184615px;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: -0.0115rem;
         color: #36536B;
         mix-blend-mode: normal;
         opacity: 0.75;
@@ -175,48 +175,48 @@ padding: 40px 165px 40px 165px;
         display: flex;
         flex-wrap: wrap;
         align-items: center; 
-        gap: 50px;
-        max-width: 536px;
+        gap: 3.125rem;
+        max-width: 33.5rem;
         height: auto;
       }
     }
   }
 }
 
-@media (max-width: 1148px) {
-  padding: 40px 65px 40px 65px !Important;
+@media (max-width: 71.75rem) {
+  padding: 2.5rem 4.0625rem 2.5rem 4.0625rem !Important;
 }
 
 // tablet
-@media (max-width: 768px) {
-  padding: 40px 30px !Important;
+@media (max-width: 48rem) {
+  padding: 2.5rem 1.875rem !Important;
   text-align: center;
 
   h1 {
-    font-size: 48px !Important;
+    font-size: 3rem !Important;
   }
   .grid-items {
     display: flex !Important;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
 
     form {
-      max-width: 445px;
+      max-width: 27.8125rem;
     }
 
     .col2 {
       display: flex;
       align-items: center;
       h2 {
-        font-size: 24px !Important;
-        line-height: 32px !Important;
+        font-size: 1.5rem !Important;
+        line-height: 2rem !Important;
       }
 
       .logos {
         display: flex;
         justify-content: space-between;
-        max-width: 541px;
+        max-width: 33.8125rem;
       }
     }
   }
@@ -224,16 +224,16 @@ padding: 40px 165px 40px 165px;
 }
 
 // mobile
-@media (max-width: 580px) {
-  padding: 40px 25px !Important;
+@media (max-width: 36.25rem) {
+  padding: 2.5rem 1.5625rem !Important;
   h1 {
-    font-size: 32px !Important;
-    line-height: 36px !Important;
+    font-size: 2rem !Important;
+    line-height: 2.25rem !Important;
   }
 
   h2 {
-    font-size: 24px !Important;
-    line-height: 32px !Important;
+    font-size: 1.5rem !Important;
+    line-height: 2rem !Important;
   }
 
   .logos {
@@ -241,5 +241,4 @@ padding: 40px 165px 40px 165px;
       margin: 0 auto;
     }
   }
-}
-`
+}`

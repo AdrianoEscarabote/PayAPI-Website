@@ -90,6 +90,7 @@ const formReducer = (state: FormState, action: Action): FormState => {
 
 const FormComponent = () => {
   const [buttonAvaliable, setButtonAvaliable] = useState<boolean>(true);
+  const [inputChecked, setInputChecked] = useState<boolean>(false)
   const [formData, dispatch] = useReducer(formReducer, initialState)
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -118,7 +119,7 @@ const FormComponent = () => {
       case "message":
         dispatch({ type: "SET_MESSAGE", payload: value });
         if (value === "") {
-          dispatch({ type: "SET_ERROR_MESSAGE", payload: "Mensagem é obrigatória" });
+          dispatch({ type: "SET_ERROR_MESSAGE", payload: "Message can't be empty" });
         } else {
           dispatch({ type: "SET_ERROR_MESSAGE", payload: "" });
         }
@@ -126,7 +127,7 @@ const FormComponent = () => {
       case "title":
         dispatch({ type: "SET_TITLE", payload: value });
         if (value === "") {
-          dispatch({ type: "SET_ERROR_TITLE", payload: "Título é obrigatório" });
+          dispatch({ type: "SET_ERROR_TITLE", payload: "Title can't be empty" });
         } else {
           dispatch({ type: "SET_ERROR_TITLE", payload: "" });
         }
@@ -134,7 +135,7 @@ const FormComponent = () => {
       case "company": 
         dispatch({ type: "SET_COMPANY_NAME", payload: value });
         if (value === "") {
-          dispatch({ type: "SET_ERROR_COMPANY_NAME", payload: "Nome da empresa é obrigatório" });
+          dispatch({ type: "SET_ERROR_COMPANY_NAME", payload: "Company name can't be empty" });
         } else {
           dispatch({ type: "SET_ERROR_COMPANY_NAME", payload: "" });
         }
@@ -152,6 +153,7 @@ const FormComponent = () => {
     ev.preventDefault();
     dispatch({ type: "CLEAN_FORM", payload: "" });
     setButtonAvaliable(true);
+    inputChecked ? setInputChecked(false) : setInputChecked(false)
   };
 
   return (
@@ -184,8 +186,8 @@ const FormComponent = () => {
           <p className="error">{formData.messageError}</p>
         </label>
         
-        <label htmlFor="up-to-date" aria-label="leave the input checked if you want to stay updated on company announcements and updates to our API">
-          <input type="checkbox" name="up-to-date" id="up-to-date" />
+        <label className="label_checkbox" htmlFor="up-to-date" aria-label="leave the input checked if you want to stay updated on company announcements and updates to our API">
+          <input onChange={(ev) => setInputChecked(ev.currentTarget.checked)} checked={inputChecked} type="checkbox" name="up-to-date" id="up-to-date" />
           <span>Stay up-to-date with company announcements and updates to our API</span>
         </label>
       </fieldset>
@@ -196,7 +198,7 @@ const FormComponent = () => {
 };
 
 export const Contact = () => {
-
+  
   return (
     <ContactStyled>
       <div className="container">

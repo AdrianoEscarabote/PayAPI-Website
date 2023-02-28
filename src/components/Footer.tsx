@@ -6,7 +6,7 @@ import iconLinkedin from "../assets/shared/desktop/linkedin.svg"
 import { Link } from "react-router-dom";
 
 interface FooterProps {
-  setName: React.Dispatch<React.SetStateAction<string | null>>
+  setName: React.Dispatch<React.SetStateAction<string | null>>;
 };
 
 export const Footer: React.FC<FooterProps> = ({ setName }) => {

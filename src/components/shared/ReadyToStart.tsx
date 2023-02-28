@@ -20,11 +20,11 @@ export const ReadyToStart = () => {
 export const ReadyToStartStyled = styled.section`
 display: flex;
 align-items: center;
-padding: 40px 0px;
+padding: 2.5rem 0rem;
 width: 100%;
 
 .container-form {
-  max-width: 1440px;
+  max-width: 90rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -32,9 +32,9 @@ width: 100%;
 
   h4 {
     font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -0.369231px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.0231rem;
     color: #36536B;
     font-family: 'DM Serif Display';
   }
@@ -43,49 +43,64 @@ width: 100%;
     display: flex;
     align-items: center;
     background-color: blue;
-    width: 445px;
-    height: 48px;
+    width: 27.8125rem;
+    height: 3rem;
     background: #FBFCFE;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-    border-radius: 24px;
+    box-shadow: 0.625rem 0.625rem 1.5625rem -0.625rem rgba(54, 83, 107, 0.25);
+    border-radius: 1.5rem;
     position: relative;
   
     label {
       width: 100%;
+      padding-left: 1.4375rem;
       input {
-        width: 100%;
-        max-width: 425px;
-        margin-left: 10px;
+        width: 56%;
+        max-width: 26.5625rem;
         border: none;
         font-weight: 700;
-        font-size: 15px;
-        line-height: 18px;
+        font-size: 0.9375rem;
+        line-height: 1.125rem;
         color: #36536B;
         opacity: 1;
-  
-        &::-webkit-input-placeholder,
-        &:-moz-placeholder,
-        &:-moz-placeholder { 
+        &:focus {
+          outline: 0.1625rem dotted #000;
+        }
+
+        &::placeholder {
           mix-blend-mode: normal;
           opacity: 0.5;
+        }
+        
+        &:-ms-input-placeholder {
+          mix-blend-mode: normal;
+          opacity: 0.5;
+        }
+        
+        &::-ms-input-placeholder {
+          mix-blend-mode: normal;
+          opacity: 0.5;
+        }
+
+        &:focus {
+          outline
         }
       }
     }
     button {
       position: absolute;
-      right: 0px;
-      width: 173px;
-      height: 48px;
+      right: 0rem;
+      width: 10.8125rem;
+      height: 3rem;
       background: #BA4270;
-      box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-      border-radius: 24px;
+      box-shadow: 0.625rem 0.625rem 1.5625rem -0.625rem rgba(54, 83, 107, 0.25);
+      border-radius: 1.5rem;
       display: grid;
       place-content: center;
       text-decoration: none;
       font-weight: 700;
-      font-size: 15px;
-      line-height: 18px;
-      letter-spacing: -0.115385px;
+      font-size: 0.9375rem;
+      line-height: 1.125rem;
+      letter-spacing: -0.0072rem;
       color: #FBFCFE;
   
       &:hover {
@@ -95,55 +110,54 @@ width: 100%;
     }
   }
 }
-
 // tablet
-@media (max-width: 932px) {
+@media (max-width: 58.25rem) {
   .container-form {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
   }
 }
-
 // mobile
-@media (max-width: 580px) {
+@media (max-width: 36.25rem) {
   .container-form {
     h4 {
       font-weight: 400;
-      font-size: 32px;
-      line-height: 36px;
+      font-size: 2rem;
+      line-height: 2.25rem;
     }
 
     form {
       flex-direction: column !Important; 
       align-items: center !Important;
       width: 100%; 
-      max-width: 327px !Important;
+      max-width: 20.4375rem !Important;
       background: transparent;
       box-shadow: unset;
-      gap: 16px;
+      gap: 1rem;
       height: auto;
 
       label {
-        border-radius: 24px;
-        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        border-radius: 1.5rem;
+        box-shadow: 0.625rem 0.625rem 1.5625rem -0.625rem rgba(54, 83, 107, 0.25);
         background: #fff; 
         width: 100% !Important;
+        padding: 0px !Important;
 
         input {
-          width: 91.5%;
+          width: 100%;
           outline: transparent;
-          height: 48px;
-          border-radius: 24px;
-          padding-left: 27px;
+          height: 3rem;
+          border-radius: 1.5rem;
+          padding-left: 1.6875rem;
           margin-left: unset !Important;
         }
       }
 
       button {
         width: 100%;
-        max-width: 327px;
-        height: 48px !Important;
+        max-width: 20.4375rem;
+        height: 3rem !Important;
         position: initial !Important;
       }
     }

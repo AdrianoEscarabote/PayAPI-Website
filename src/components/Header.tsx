@@ -2,14 +2,14 @@ import { HeaderStyled } from "../styles/HeaderStyle"
 import { ScheduleElement } from "../styles/shared/ScheduleElement";
 import iconCompany from "../assets/shared/desktop/logo.svg";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import closeMenu from "../assets/shared/mobile/close.svg";
 import openMenuImg from "../assets/shared/mobile/menu.svg";
 
 interface HeaderProps {
   name: string | null,
-  setName: React.Dispatch<React.SetStateAction<string | null>>
-}
+  setName: React.Dispatch<React.SetStateAction<string | null>>;
+};
 
 export const Header: React.FC<HeaderProps> = ({ setName, name }) => {
   const [openMenu, setOpenMenu] = useState("closed");
@@ -42,6 +42,12 @@ export const Header: React.FC<HeaderProps> = ({ setName, name }) => {
            onClick={HandleClickMobileButton}>
             <img src={openMenuImg} alt="" aria-hidden="true" />
           </button>
+
+          <div className={openMenu === "closed" ? "hidden" : "close-mobile-menu"} 
+          aria-label={openMenu === "closed" ? "" : "close mobile menu"} 
+          aria-hidden={openMenu === "closed" ? "true" : "false"}
+          onClick={HandleClickMobileButton}></div>
+
           <div className={openMenu === "closed" ? "nav-items" : "nav-items mobile-layout"}>
             <div className={`container-mobile-background ${name}`}>
               <div className="background-mobile"></div>

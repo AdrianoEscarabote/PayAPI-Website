@@ -1,6 +1,5 @@
 import { PricingStyled } from "../styles/Pricing"
 import iconCheck from "../assets/shared/desktop/icon-check.svg";
-import { useEffect } from "react";
 import { ReadyToStart } from "./shared/ReadyToStart";
 
 interface Data {

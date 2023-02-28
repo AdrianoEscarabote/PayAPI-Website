@@ -104,5 +104,5 @@ export const Main = () => {
         </div>
       </div>
     </MainStyled>
-  )
-}
+  );
+};
