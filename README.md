@@ -1,8 +1,12 @@
 - Deploy [click here](https://pay-api-website-adrianoescarabote.vercel.app/)
 
-# VIDEO-DESKTOP 
+# DESKTOP 
 
 https://user-images.githubusercontent.com/101136987/221879205-883cda6d-a0d9-4d5c-898b-1dcaa82b3c0c.mp4
+
+# MOBILE
+
+https://user-images.githubusercontent.com/101136987/221890959-9f2b5ee3-36a3-407d-9361-396b3822dcbe.mp4
 
 # Frontend Mentor - PayAPI multi-page website solution
 
