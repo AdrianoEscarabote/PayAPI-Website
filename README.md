@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+- Deploy [click here](https://pay-api-website-adrianoescarabote.vercel.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# VIDEO-DESKTOP 
 
-## Available Scripts
+https://user-images.githubusercontent.com/101136987/221879205-883cda6d-a0d9-4d5c-898b-1dcaa82b3c0c.mp4
 
-In the project directory, you can run:
+# Frontend Mentor - PayAPI multi-page website solution
 
-### `npm start`
+This is a solution to the [PayAPI multi-page website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/payapi-multipage-website-FDLR1Y11e). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-### `npm test`
+## Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### The challenge
 
-### `npm run build`
+Users should be able to:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- Receive an error message when the contact form is submitted if:
+  - The `Name`, `Email Address` or `Message` fields are empty should show "This field can't be empty"
+  - The `Email Address` is not formatted correctly should show "Please use a valid email address"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## My process
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built with
 
-### `npm run eject`
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Typescript
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Continued development
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+It is with great satisfaction that I express my gratitude for having completed this project. It was a very comprehensive and successful initiative, which involved the creation of a four-page website and represented an excellent test of my skills in building responsive layouts. The site in question is a complete marketing tool, which has personalized form validation. Importantly, I paid special attention to performance, accessibility, and SEO, which resulted in excellent reviews for Lighthouse (PC).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![](./screenshots/stats-project.png)
 
-## Learn More
+I have a strong desire to start larger projects, perhaps exploring different technologies.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Linkedin - [AdrianoEscarabote](https://www.linkedin.com/in/adriano-escarabote-944b02233/)
+- Frontend Mentor - [@AdrianoEscarabote](https://www.frontendmentor.io/profile/AdrianoEscarabote)
+- Instagram - [@ogdrian](https://www.instagram.com/ogdrian/)
+- Twitter - [@drianEscarabote](https://twitter.com/drianEscarabote)
