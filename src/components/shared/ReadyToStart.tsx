@@ -1,14 +1,19 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 export const ReadyToStart = () => {
-  
+  const [inputValue, setInputValue] = useState("");
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    setInputValue("")
+  }
   return (
     <ReadyToStartStyled className="section-form">
       <div className="container-form">
         <h4>Ready to start?</h4>
-        <form noValidate>
+        <form noValidate onSubmit={handleSubmit}>
           <label htmlFor="email-ready">
-            <input type="email" name="email-ready" id="email-ready" placeholder="Enter email address" />
+            <input type="email" value={inputValue} onChange={e => setInputValue(e.currentTarget.value)} name="email-ready" id="email-ready" placeholder="Enter email address" />
           </label>
           <button type="submit">Schedule a Demo</button>
         </form>

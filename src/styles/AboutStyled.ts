@@ -117,7 +117,6 @@ align-items: center;
 .section-form {
   width: 100%;
   .container-form {
-    padding: 2.5rem !Important;
     width: 100%;
   }
 }

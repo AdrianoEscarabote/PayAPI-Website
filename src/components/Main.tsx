@@ -1,4 +1,5 @@
 import { MainStyled } from "../styles/MainStyled";
+import { useState } from "react";
 import iconPhone from "../assets/home/desktop/illustration-phone-mockup.svg";
 import logoTesla from "../assets/shared/desktop/tesla.svg";
 import logoMicrosoft from "../assets/shared/desktop/microsoft.svg";
@@ -12,8 +13,14 @@ import iconPersonal from "../assets/home/desktop/icon-personal-finances.svg";
 import iconBanking from "../assets/home/desktop/icon-banking-and-coverage.svg";
 import iconConsumer from "../assets/home/desktop/icon-consumer-payments.svg";
 import { ReadyToStart } from "./shared/ReadyToStart";
+import { Link } from "react-router-dom";
 
 export const Main = () => {
+  const [inputValue, setInputValue] = useState("");
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    setInputValue("")
+  }
   return (
     <MainStyled>
       <div className="container">
@@ -26,13 +33,13 @@ export const Main = () => {
               <h1>
               Start building with our APIs for absolutely free.
               </h1>
-              <form noValidate>
+              <form noValidate onSubmit={handleSubmit}>
                 <label htmlFor="email">
-                  <input type="email" name="email" id="email" placeholder="Enter email address"/>
+                  <input type="email" value={inputValue} onChange={e => setInputValue(e.currentTarget.value)} name="email" id="email" placeholder="Enter email address"/>
                 </label>
                 <button type="submit">Schedule a Demo</button>
               </form>
-              <p>Have any questions? <a href="/">Contact Us</a></p>
+              <p>Have any questions? <Link to="/contact" aria-label="go to contact">Contact Us</Link></p>
             </div>
             <div className="col-2">
               <img src={iconPhone} alt="" aria-hidden="true" />
@@ -48,7 +55,7 @@ export const Main = () => {
           <div className="work-col1">
             <h2>Who we work with</h2>
             <p>Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users.</p>
-            <a href="/">About Us</a>
+            <Link to="/about" aria-label="go to about">About Us</Link>
           </div>
           <div className="work-col2">
             <div className="images">

@@ -69,8 +69,8 @@ export const About = () => {
               together. At PayAPI, we have diverse backgrounds and skills.</p>
             </section>
           </div>
+          <ReadyToStart />
         </div>
-        <ReadyToStart />
       </div>
     </AboutStyled>
   );
